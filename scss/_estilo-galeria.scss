@@ -24,11 +24,7 @@ aside {
 }
 
 .video {
-    width: 840px;
-    height: 473px;
-    border: 2px solid white;
-    margin: 4px;
-    transition: 1s;
+    @extend .media;
 }
 
 /* Fin estilo img y vid */
@@ -37,17 +33,10 @@ aside {
 @media screen and (max-width: 768px) {
 
     /* Inicio estilo galeria img y vid 768 */
-    .video {
-        width: 530px;
-        height: 315px;
-        margin-left: 15%;
-        margin-right: 15%;
-    }
     .media{
-        width: 530px;
+        width: 90%;
         height: 315px;
     }
-
     /* Fin estilo galeria img y vid768px */
 
     /* Inicio estilo aside 768px */
@@ -64,15 +53,12 @@ aside {
 @media screen and (max-width: 426px) {
 
     /* Inicio estilo galeria img y vid 426px */
-    .video {
-        width: 398px;
+    .media{
         height: 237px;
+    }
+    .video {
         margin-left: 2%;
         margin-right: 2%;
-    }
-    .media{
-        width: 398px;
-        height: 237px;
     }
 
     /* Fin estilo galeria img y vid 426px */
